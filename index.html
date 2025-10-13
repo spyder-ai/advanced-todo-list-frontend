@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="logoutBtn">Logout</button>
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="todo-app">
+            <h2>To-Do list <img src="icon.png" alt=""></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="your text here">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', async () => {
+            await fetch('https://advanced-todo-list-4.onrender.com/api/logout', { method: 'POST', credentials: 'include' });
+            window.location.href = 'login.html';
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
