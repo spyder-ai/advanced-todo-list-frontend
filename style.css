@@ -140,3 +140,72 @@ ul li span:hover{
         height: 100%;
     }
 }
+
+/* ---------- Responsive Design ---------- */
+
+/* For tablets */
+@media (max-width: 900px) {
+  .todo-app {
+    width: 90%;
+    padding: 30px 20px 60px;
+  }
+
+  .todo-app h2 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    padding: 14px 30px;
+    font-size: 15px;
+  }
+
+  #logoutBtn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}
+
+/* For phones */
+@media (max-width: 600px) {
+  .container {
+    padding: 5px;
+  }
+
+  .todo-app {
+    width: 100%;
+    margin: 50px auto 10px;
+    padding: 25px 15px 40px;
+    border-radius: 10px;
+  }
+
+  .row {
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 15px;
+    padding-left: 40px;
+  }
+
+  #logoutBtn {
+    position: static;
+    display: block;
+    margin: 10px auto;
+  }
+}
