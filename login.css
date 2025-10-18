@@ -116,3 +116,51 @@ button:hover {
   margin-top: 30px;
   color: #fff;
 }
+
+/* ---------- Responsive Design ---------- */
+
+/* responsive in tablets (screen width < 900px) */
+@media (max-width: 900px) {
+  .wrapper {
+    width: 80%;
+    padding: 25px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+}
+
+/* responsive in phones (screen width < 600px) */
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-field input {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .forget {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
